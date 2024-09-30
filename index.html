@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Book Borrowing</title>
+    <link rel="icon" href="./img/logo.jpg" type="image/x-icon" sizes="16x16">
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/logo.jpg" alt="Library Logo" class="logo">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search for books..." class="searchInput">
+                    <button class="searchButton">
+                        <img src="./img/search.png" width="20" height="20" alt="Search" class="searchIcon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./img/Product/yourName.jfif" alt="Your Name" class="sliderImg">
+                <h1 class="sliderTitle">Your Name</h1>
+                <a href="#borrow">
+                    <button class="borrowButton">BORROW NOW</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Product/yourName.jfif" alt="Book Title 2" class="sliderImg">
+                <h1 class="sliderTitle">Book Title 2</h1>
+                <a href="#borrow">
+                    <button class="borrowButton">BORROW NOW</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Product/yourName.jfif" alt="Book Title 2" class="sliderImg">
+                <h1 class="sliderTitle">Book Title 2</h1>
+                <a href="#borrow">
+                    <button class="borrowButton">BORROW NOW</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Product/yourName.jfif" alt="Book Title 2" class="sliderImg">
+                <h1 class="sliderTitle">Book Title 2</h1>
+                <a href="#borrow">
+                    <button class="borrowButton">BORROW NOW</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Product/yourName.jfif" alt="Book Title 2" class="sliderImg">
+                <h1 class="sliderTitle">Book Title 2</h1>
+                <a href="#borrow">
+                    <button class="borrowButton">BORROW NOW</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Product/yourName.jfif" alt="Book Title 2" class="sliderImg">
+                <h1 class="sliderTitle">Book Title 2</h1>
+                <a href="#borrow">
+                    <button class="borrowButton">BORROW NOW</button>
+                </a>
+            </div>
+            <!-- Additional slider items can be added here -->
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <span class="featureTitle">BORROW WITH EASE</span>
+            <span class="featureDesc">Quick and simple borrowing process.</span>
+        </div>
+        <div class="feature">
+            <span class="featureTitle">2 WEEKS BORROW DURATION</span>
+            <span class="featureDesc">Plenty of time to read.</span>
+        </div>
+    </div>
+
+    <div class="product" id="borrow">
+        <h1 class="productTitle">Borrow Your Book</h1>
+        <p class="productDesc">Please fill in your information to borrow a book.</p>
+        <div class="payment">
+            <h2 class="payTitle">Personal Information</h2>
+            <form action="data.php" method="POST">
+                <label for="name">Name and Surname</label>
+                <input type="text" id="name" name="name" placeholder="Wong Wei Hng" class="payInput" required>
+                <label for="membership_number">Library Membership Number</label>
+                <input type="text" id="membership_number" name="membership_number" placeholder="Membership Number" class="payInput" required>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="+60123456789" class="payInput" maxlength="13" required>
+                <label for="book_title">Book Title</label>
+                <input type="text" id="phone" name="book_title" placeholder="Your Name" class="payInput" required>
+                <button type="submit" class="borrowButton">Borrow</button>
+                <span class="close">X</span>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerLeft">
+            <h1 class="fMenuTitle">About Us</h1>
+            <ul class="fList">
+                <li class="fListItem">Our Story</li>
+                <li class="fListItem">Contact</li>
+                <li class="fListItem">Careers</li>
+            </ul>
+        </div>
+        <div class="footerRight">
+            <h1 class="fMenuTitle">Follow Us</h1>
+            <div class="fIcons">
+                <img src="./img/Contact/facebook.png" alt="Facebook" class="fIcon">
+                <img src="./img/Contact/twitter.png" alt="Twitter" class="fIcon">
+            </div>
+            <span class="copyright">@library. All rights reserved. 2024.</span>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

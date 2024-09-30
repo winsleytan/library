@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navigation Styles */
+#nav {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px;
+}
+
+.navTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.search {
+  display: flex;
+}
+
+.searchInput {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.searchButton {
+  background-color: #0056b3;
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.menuItem {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+/* Slider Styles */
+.slider {
+  position: relative;
+  margin: 20px 0;
+}
+
+.sliderWrapper {
+  display: flex;
+  overflow: auto;
+}
+
+.sliderItem {
+  min-width: 300px;
+  margin-right: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sliderImg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.sliderTitle {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.feature {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.featureTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.featureDesc {
+  font-size: 0.9rem;
+}
+
+/* Borrow Section */
+.product {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.productTitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.productDesc {
+  margin-bottom: 20px;
+}
+
+.payInput {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Admin Section */
+.adminSection {
+  margin: 20px 0;
+}
+
+.borrowedBooksTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.borrowedBooksTable th, .borrowedBooksTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.borrowedBooksTable th {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footerLeft, .footerRight {
+  flex: 1;
+}
+
+.fMenuTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+}
+
+.fListItem {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.fIcons {
+  display: flex;
+}
+
+.fIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sliderWrapper {
+      flex-direction: column;
+  }
+
+  .sliderItem {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .features {
+      flex-direction: column;
+  }
+}
